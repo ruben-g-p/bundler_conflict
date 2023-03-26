@@ -1,0 +1,28 @@
+PATH
+  remote: new_translation
+  specs:
+    new_translation (0.1.0)
+      i18n (= 1.5.3)
+
+PATH
+  remote: old_translation
+  specs:
+    old_translation (0.1.0)
+      i18n (= 1.5.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.2.2)
+    i18n (1.5.3)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  new_translation!
+  old_translation!
+
+BUNDLED WITH
+   2.1.4
