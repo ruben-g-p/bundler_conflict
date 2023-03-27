@@ -4,6 +4,7 @@ This is a small project to demonstrate (remind me) that `Bundler` cannot handle
 two different versions of same gem at the same time in the same project.
 
 By executing `bundle install` it throws following error:
+
 ```bash
 Bundler could not find compatible versions for gem "i18n":
   In snapshot (Gemfile.lock):
@@ -19,3 +20,7 @@ Bundler could not find compatible versions for gem "i18n":
 Running `bundle update` will rebuild your snapshot from scratch, using only
 the gems in your Gemfile, which may resolve the conflict.
 ```
+
+> The `old_transalation` and `new_translation` gems are local dependencies
+defined in the main project's `gemfile` as such, each one stored in its own
+directory inside project's root directory.
